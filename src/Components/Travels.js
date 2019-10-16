@@ -36,7 +36,7 @@ const travels = [
 
 const Travels = () => (
         travels.map(travel => (
-            <Travel travelObject={travel}/>
+            <Travel key={travel.destination} travelObject={travel}/>
         ))
 );
 
